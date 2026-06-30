@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>바이브코딩 항해일지 (The Vibe Coding Log) | 30일 동안 만드는 AI 시대의 개발 습관</title>
+  <meta name="description" content="『바이브코딩 항해일지(The Vibe Coding Log)』 - Cursor와 Claude를 활용해 30일 동안 30개의 프로젝트를 만들며 AI 시대의 개발 습관을 익히는 실전 입문서." />
+  <meta name="keywords" content="바이브코딩, Vibe Coding, 항해일지, Cursor, Claude, AI 개발, 입문서, HTML, CSS, JavaScript, React, AI Agent, RAG, MCP" />
+  <meta name="author" content="홍길동" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="바이브코딩 항해일지 (The Vibe Coding Log)" />
+  <meta property="og:description" content="30일 동안 만드는 AI 시대의 개발 습관. Cursor와 Claude로 30개의 프로젝트를 완성하세요." />
+  <meta property="og:image" content="images/cover.svg" />
+  <meta property="og:url" content="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage/" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+
+  <!-- Fonts: Pretendard -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="바이브코딩 항해일지 홈">
+        <img src="images/logo.svg" alt="바이브코딩 항해일지 로고" width="36" height="36" />
+        <span>Vibe Coding Log</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#overview" class="nav__link">책 소개</a></li>
+          <li><a href="#roadmap" class="nav__link">학습내용</a></li>
+          <li><a href="#projects" class="nav__link">예제앱</a></li>
+          <li><a href="#github" class="nav__link">GitHub</a></li>
+          <li><a href="#author" class="nav__link">저자</a></li>
+          <li><a href="#purchase" class="nav__link nav__link--cta">구매하기</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">에이콘출판 · 30 Day Voyage</p>
+          <h1 class="hero__title">바이브코딩 항해일지</h1>
+          <p class="hero__subtitle">
+            30일 동안 만드는<br />
+            <strong>AI 시대의 개발 습관</strong>
+          </p>
+          <p class="hero__desc">
+            Cursor와 Claude를 길잡이 삼아, 매일 하나씩 진짜 동작하는 앱을 만듭니다.
+            랜딩 페이지부터 AI Agent까지 — 30일의 항해가 끝나면 당신은 이미 개발자입니다.
+          </p>
+          <div class="hero__buttons">
+            <a
+              href="https://github.com/junsang-dong/vibecoding-day01-landing-page"
+              class="btn btn--ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span aria-hidden="true">★</span> GitHub 보기
+            </a>
+            <a
+              href="https://product.kyobobook.co.kr/detail/S000219726261"
+              class="btn btn--primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              교보문고 구매
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__cover reveal">
+          <img
+            src="images/cover.svg"
+            alt="바이브코딩 항해일지 책 표지"
+            class="hero__cover-img"
+            width="320"
+            height="440"
+          />
+        </div>
+      </div>
+      <a href="#overview" class="hero__scroll" aria-label="아래로 스크롤">↓</a>
+    </section>
+
+    <!-- ============ BOOK OVERVIEW ============ -->
+    <section class="section" id="overview">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Book Overview</p>
+          <h2 class="section__title">책 소개</h2>
+          <p class="section__lead">한눈에 보는 『바이브코딩 항해일지』</p>
+        </header>
+
+        <div class="overview-grid">
+          <article class="overview-card reveal">
+            <div class="overview-card__icon" aria-hidden="true">🏢</div>
+            <h3>출판사</h3>
+            <p>에이콘</p>
+          </article>
+          <article class="overview-card reveal">
+            <div class="overview-card__icon" aria-hidden="true">✍️</div>
+            <h3>저자</h3>
+            <p>홍길동</p>
+          </article>
+          <article class="overview-card reveal">
+            <div class="overview-card__icon" aria-hidden="true">📖</div>
+            <h3>분량</h3>
+            <p>약 400페이지</p>
+          </article>
+          <article class="overview-card reveal">
+            <div class="overview-card__icon" aria-hidden="true">🎯</div>
+            <h3>난이도</h3>
+            <p>입문 ~ 중급</p>
+          </article>
+          <article class="overview-card reveal">
+            <div class="overview-card__icon" aria-hidden="true">🚀</div>
+            <h3>실습</h3>
+            <p><span class="counter" data-target="30">0</span>개 프로젝트</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY THIS BOOK ============ -->
+    <section class="section section--alt" id="why">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Why This Book</p>
+          <h2 class="section__title">왜 이 책인가?</h2>
+          <p class="section__lead">AI 시대, 개발을 배우는 가장 빠른 길</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🤖</div>
+            <h3>AI 시대 개발법</h3>
+            <p>코드를 외우는 시대는 끝났습니다. AI와 협업하며 문제를 해결하는 새로운 개발 방식을 익힙니다.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">⌨️</div>
+            <h3>Cursor 활용</h3>
+            <p>AI 코드 에디터 Cursor를 200% 활용해, 입문자도 빠르게 결과물을 만들어 냅니다.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🧠</div>
+            <h3>Claude 활용</h3>
+            <p>강력한 LLM Claude로 설계, 디버깅, 리팩터링까지. 든든한 페어 프로그래머와 함께합니다.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🛠️</div>
+            <h3>실전 프로젝트</h3>
+            <p>이론이 아닌 실전. 30개의 진짜 동작하는 앱을 손으로 직접 만들며 배웁니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING ROADMAP ============ -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Learning Journey</p>
+          <h2 class="section__title">학습 로드맵</h2>
+          <p class="section__lead">30일, 한 걸음씩 성장하는 항해 코스</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__day">DAY 1</span>
+            <div class="timeline__content">
+              <h3>Landing Page</h3>
+              <p>HTML/CSS/JS 기초로 첫 웹페이지를 완성합니다.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__day">DAY 5</span>
+            <div class="timeline__content">
+              <h3>API</h3>
+              <p>외부 API를 연동하고 비동기 데이터를 다룹니다.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__day">DAY 10</span>
+            <div class="timeline__content">
+              <h3>React</h3>
+              <p>컴포넌트 기반 모던 프론트엔드 개발에 입문합니다.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__day">DAY 20</span>
+            <div class="timeline__content">
+              <h3>AI Agent</h3>
+              <p>RAG, MCP를 활용한 AI 에이전트를 직접 구축합니다.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__day">DAY 30</span>
+            <div class="timeline__content">
+              <h3>Deployment</h3>
+              <p>완성한 앱을 세상에 배포하며 항해를 마칩니다.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SAMPLE PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Sample Apps</p>
+          <h2 class="section__title">책에서 만드는 프로젝트</h2>
+          <p class="section__lead">실제로 손에 잡히는 결과물, 30개</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="images/screenshot1.svg" alt="Landing Page 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>Landing Page</h3>
+              <p>반응형 랜딩 페이지로 웹의 기초를 다집니다.</p>
+              <a href="https://github.com/junsang-dong/vibecoding-day01-landing-page" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot2.svg" alt="ToDo 앱 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>ToDo</h3>
+              <p>DOM 조작과 로컬 스토리지를 익히는 할 일 관리 앱.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot1.svg" alt="Weather 앱 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>Weather</h3>
+              <p>날씨 API를 연동해 실시간 데이터를 표시합니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot2.svg" alt="YouTube 클론 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>YouTube</h3>
+              <p>영상 목록 UI와 검색 기능을 구현합니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot1.svg" alt="News 앱 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>News</h3>
+              <p>뉴스 API로 카테고리별 기사를 모아 봅니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot2.svg" alt="RAG 앱 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>RAG</h3>
+              <p>문서 기반 검색 증강 생성 챗봇을 만듭니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot1.svg" alt="MCP 앱 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>MCP</h3>
+              <p>Model Context Protocol로 AI 도구를 연결합니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/screenshot2.svg" alt="AI Agent 프로젝트 미리보기" loading="lazy" />
+            <div class="project-card__body">
+              <h3>AI Agent</h3>
+              <p>스스로 판단하고 행동하는 자율 에이전트를 구축합니다.</p>
+              <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB RESOURCES ============ -->
+    <section class="section" id="github">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">GitHub Resources</p>
+          <h2 class="section__title">GitHub 리소스</h2>
+          <p class="section__lead">책과 함께 보는 살아있는 자료들</p>
+        </header>
+
+        <div class="resource-grid">
+          <article class="resource-card reveal">
+            <img src="images/github.svg" alt="블로그 아이콘" width="56" height="56" loading="lazy" />
+            <h3>책 소개</h3>
+            <p>블로그에서 책의 상세 소개와 목차를 확인하세요.</p>
+            <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">블로그 바로가기</a>
+          </article>
+          <article class="resource-card reveal">
+            <img src="images/github.svg" alt="GitHub 저장소 아이콘" width="56" height="56" loading="lazy" />
+            <h3>GitHub 저장소</h3>
+            <p>30개 프로젝트의 전체 소스 코드를 모았습니다.</p>
+            <a href="https://nextplatform.net/book-the-vibe-coding-log-a-30-day-voyage-github-repos/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </article>
+          <article class="resource-card reveal">
+            <img src="images/github.svg" alt="완성 앱 데모 아이콘" width="56" height="56" loading="lazy" />
+            <h3>완성 앱</h3>
+            <p>Day 1 랜딩 페이지 예제를 라이브로 체험해 보세요.</p>
+            <a href="https://github.com/junsang-dong/vibecoding-day01-landing-page" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOK CONTENTS (ACCORDION) ============ -->
+    <section class="section section--alt" id="contents">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Book Contents</p>
+          <h2 class="section__title">목차 소개</h2>
+          <p class="section__lead">클릭해서 각 파트의 내용을 펼쳐 보세요</p>
+        </header>
+
+        <div class="accordion reveal">
+          <div class="accordion__item">
+            <button class="accordion__header" aria-expanded="false">
+              <span><strong>PART 1.</strong> 출항 준비 — 개발 환경과 웹의 기초</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel">
+              <ul>
+                <li>DAY 1–3 · Cursor & Claude 환경 설정</li>
+                <li>DAY 4–6 · HTML / CSS / JavaScript 기초</li>
+                <li>DAY 7–9 · 반응형 랜딩 페이지 완성</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header" aria-expanded="false">
+              <span><strong>PART 2.</strong> 항해 본론 — API와 모던 프론트엔드</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel">
+              <ul>
+                <li>DAY 10–14 · API 연동과 비동기 프로그래밍</li>
+                <li>DAY 15–18 · React로 만드는 SPA</li>
+                <li>DAY 19–20 · 상태 관리와 컴포넌트 설계</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header" aria-expanded="false">
+              <span><strong>PART 3.</strong> 도착 — AI Agent와 배포</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel">
+              <ul>
+                <li>DAY 21–25 · RAG & MCP 기반 AI 에이전트</li>
+                <li>DAY 26–28 · 자율 AI Agent 구축</li>
+                <li>DAY 29–30 · 배포와 운영, 그리고 다음 항해</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUTHOR ============ -->
+    <section class="section" id="author">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Author</p>
+          <h2 class="section__title">저자 소개</h2>
+        </header>
+
+        <div class="author">
+          <div class="author__photo reveal">
+            <img src="images/author.svg" alt="저자 홍길동 프로필 사진" width="280" height="280" loading="lazy" />
+          </div>
+          <div class="author__info reveal">
+            <h3>홍길동</h3>
+            <p class="author__role">개발자 · 강연자 · 컨설턴트</p>
+            <p class="author__bio">
+              AI와 Cloud 시대의 개발 문화를 전파하는 데 진심인 개발자입니다.
+              현장 강연과 기업 컨설팅을 통해 수많은 입문자들이 첫 코드를 작성하도록 도왔으며,
+              "Vibe Coding"이라는 새로운 학습 방식을 제안합니다.
+            </p>
+            <ul class="author__tags">
+              <li>강연</li>
+              <li>컨설팅</li>
+              <li>AI</li>
+              <li>Cloud</li>
+              <li>Vibe Coding</li>
+            </ul>
+            <div class="author__social">
+              <a href="https://github.com/junsang-dong" class="btn btn--outline btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.youtube.com/" class="btn btn--outline btn--small" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="https://nextplatform.net/" class="btn btn--outline btn--small" target="_blank" rel="noopener noreferrer">Homepage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PURCHASE CTA ============ -->
+    <section class="purchase" id="purchase">
+      <div class="container purchase__inner reveal">
+        <h2 class="purchase__title">오늘부터<br />30일 바이브코딩 항해를 시작하세요.</h2>
+        <p class="purchase__desc">한 권의 책, 30개의 프로젝트, 그리고 평생 가는 개발 습관.</p>
+        <a
+          href="https://product.kyobobook.co.kr/detail/S000219726261"
+          class="btn btn--accent btn--large"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          교보문고 구매하기
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.svg" alt="바이브코딩 항해일지 로고" width="32" height="32" />
+        <span>The Vibe Coding Log</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 The Vibe Coding Log · NextPlatform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="맨 위로 이동">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
